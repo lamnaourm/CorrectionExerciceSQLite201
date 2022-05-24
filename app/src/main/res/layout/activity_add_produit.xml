@@ -37,6 +37,7 @@
     <Button
         style="@style/btnMenu"
         android:text="Ajouter"
+        android:drawableLeft="@drawable/add"
         android:onClick="ajouterProduit"/>
 
 </LinearLayout>
