@@ -2,6 +2,7 @@ package com.example.correctionexercicesqlite201;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -57,10 +58,37 @@ public class MyDBProduit extends SQLiteOpenHelper {
     }
 
     public static ArrayList<Produit> getAllprods(SQLiteDatabase sqLiteDatabase){
-        return null;
+        ArrayList<Produit> prds = new ArrayList<>();
+
+        Cursor cur = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME,null);
+
+        while(cur.moveToNext()){
+            Produit p = new Produit();
+            p.setId(cur.getInt(0));
+            p.setLibelle(cur.getString(1));
+            p.setFamille(cur.getString(2));
+            p.setPrixAchat(cur.getDouble(3));
+            p.setPrixVente(cur.getDouble(4));
+            prds.add(p);
+        }
+
+        return prds;
     }
 
     public static Produit getOneprod(SQLiteDatabase sqLiteDatabase, int id){
-        return null;
+        Produit p = null;
+
+        Cursor cur = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE id = " + id,null);
+
+        if(cur.moveToNext()){
+            p = new Produit();
+            p.setId(cur.getInt(0));
+            p.setLibelle(cur.getString(1));
+            p.setFamille(cur.getString(2));
+            p.setPrixAchat(cur.getDouble(3));
+            p.setPrixVente(cur.getDouble(4));
+        }
+
+        return p;
     }
 }
