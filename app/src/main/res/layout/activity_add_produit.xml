@@ -10,4 +10,33 @@
     <TextView
         style="@style/titre"
         android:text="@string/titremenu3"/>
+    
+    <EditText
+        style="@style/zonesaisie"
+        android:hint="Libelle ...."
+        android:id="@+id/addlib"/>
+
+    <EditText
+        style="@style/zonesaisie"
+        android:hint="Famille ...."
+        android:id="@+id/addfam"/>
+
+    <EditText
+        style="@style/zonesaisie"
+        android:hint="Prix achat ...."
+        android:inputType="numberDecimal"
+        android:id="@+id/addpa"/>
+
+
+    <EditText
+        style="@style/zonesaisie"
+        android:hint="Prix vente ...."
+        android:inputType="numberDecimal"
+        android:id="@+id/addpv"/>
+
+    <Button
+        style="@style/btnMenu"
+        android:text="Ajouter"
+        android:onClick="ajouterProduit"/>
+
 </LinearLayout>
