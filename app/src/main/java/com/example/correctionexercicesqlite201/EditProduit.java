@@ -3,18 +3,12 @@ package com.example.correctionexercicesqlite201;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class EditProduit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        //Produit p1 = new Produit(1,"hjhj")
-    }
-
-    public void acces(View view) {
+        setContentView(R.layout.activity_edit_produit);
     }
 }

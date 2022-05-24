@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">CorrectionExerciceSQLite201</string>
+    <string name="app_name">Gestion produits</string>
+
+
+    <string name="titremenu">Menu Generale</string>
+    <string name="menu1">Lister produits</string>
+    <string name="menu2">Fiche produit</string>
+    <string name="menu3">Nouveau produit</string>
+    <string name="menu4">Editer produit</string>
+
 </resources>
