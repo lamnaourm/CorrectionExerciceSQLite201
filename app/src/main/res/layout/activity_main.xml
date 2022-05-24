@@ -7,34 +7,30 @@
     tools:context=".MainActivity">
 
     <TextView
-      style="@style/titre"
+        style="@style/titre"
         android:text="@string/titremenu" />
 
     <Button
         android:id="@+id/b1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:onClick="acces"
         android:text="@string/menu1" />
 
     <Button
         android:id="@+id/b2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:onClick="acces"
         android:text="@string/menu2" />
 
     <Button
         android:id="@+id/b3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:onClick="acces"
         android:text="@string/menu3" />
 
     <Button
         android:id="@+id/b4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/btnMenu"
         android:onClick="acces"
         android:text="@string/menu4" />
 </LinearLayout>
