@@ -111,7 +111,6 @@ public class EditProduit extends AppCompatActivity {
                     Toast.makeText(EditProduit.this, "Suppression reussie", Toast.LENGTH_SHORT).show();
                     ad.remove(p.getId() + " - " + p.getLibelle());
                 }
-
             }
         });
 

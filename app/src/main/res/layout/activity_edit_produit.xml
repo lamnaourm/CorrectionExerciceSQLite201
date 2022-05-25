@@ -42,13 +42,13 @@
         android:layout_height="wrap_content">
 
         <Button
-            style="@style/btnMenu"
+            style="@style/btnMenu.stylebtn"
             android:onClick="modifier"
             android:text="Modifier"
             />
 
         <Button
-            style="@style/btnMenu"
+            style="@style/btnMenu.stylebtn"
             android:onClick="supprimer"
             android:text="Supprimer" />
     </LinearLayout>
