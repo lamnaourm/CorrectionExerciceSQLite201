@@ -11,4 +11,43 @@
         style="@style/titre"
         android:text="@string/titremenu4"/>
 
+    <Spinner
+        style="@style/combo"
+        android:id="@+id/spedit"/>
+
+    <EditText
+        android:id="@+id/editlib"
+        style="@style/zonesaisie"
+        android:hint="Libelle ...." />
+
+    <EditText
+        android:id="@+id/editfam"
+        style="@style/zonesaisie"
+        android:hint="Famille ...." />
+
+    <EditText
+        android:id="@+id/editpa"
+        style="@style/zonesaisie"
+        android:hint="Prix achat ...."
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editpv"
+        style="@style/zonesaisie"
+        android:hint="Prix vente ...."
+        android:inputType="numberDecimal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/btnMenu"
+            android:text="Modifier"
+            android:onClick="modifier"/>
+        <Button
+            style="@style/btnMenu"
+            android:text="Supprimer"
+            android:onClick="supprimer"/>
+    </LinearLayout>
 </LinearLayout>
