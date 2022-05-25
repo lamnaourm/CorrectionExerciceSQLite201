@@ -4,10 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FicheProduit">
 
     <TextView
         style="@style/titre"
-        android:text="@string/titremenu2"/>
+        android:text="@string/titremenu2"
+        />
+
+    <Spinner
+        style="@style/combo"
+        android:id="@+id/spfiche"/>
+
+    <TextView
+        style="@style/zonefiche"
+        android:id="@+id/fichelibelle"/>
+
+    <TextView
+        style="@style/zonefiche"
+        android:id="@+id/fichefamille"/>
+
+    <TextView
+        style="@style/zonefiche"
+        android:id="@+id/ficheprixa"/>
+
+    <TextView
+        style="@style/zonefiche"
+        android:id="@+id/ficheprixv"/>
+
+
+
 
 </LinearLayout>
